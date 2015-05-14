@@ -1,0 +1,50 @@
+.ez-checkbox {
+  width: 100%;
+	position: relative;
+  display: inline-block;
+  color: #333;
+  cursor: pointer;
+
+  .check-box {
+    position: absolute;
+    border: solid #ccc 1px;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+  }
+
+  .check-label {
+    padding-left: 22px;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    .check-box {
+      border-color: #428bca;
+    }
+  }
+
+  i {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    cursor: pointer;
+    font-size: 13px;
+
+    &.fa {
+      top: 0;
+      font-size: 14px;
+    }
+  }
+}
+
+.form-group {
+  .ez-checkbox {
+    padding-top: 7px;
+
+    .check-box {
+      top: 8px;
+    }
+  }
+}
