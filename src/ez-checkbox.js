@@ -34,6 +34,10 @@ angular.module('ez.checkbox', [])
       }
 
       modelCtrl.$render = function() {
+        if (attrs.disabled) {
+          return;
+        }
+
         if (modelCtrl.$modelValue === trueValue) {
           scope.checked = true;
         } else {
@@ -42,6 +46,10 @@ angular.module('ez.checkbox', [])
       };
 
       scope.toggle = function() {
+        if (attrs.disabled) {
+          return;
+        }
+
         modelCtrl.$setViewValue(modelCtrl.$modelValue === trueValue ? falseValue : trueValue);
 
         modelCtrl.$render();

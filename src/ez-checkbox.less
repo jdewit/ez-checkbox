@@ -37,6 +37,24 @@
       font-size: 14px;
     }
   }
+
+  &[disabled="disabled"] {
+    cursor: not-allowed;
+
+    i {
+      cursor: not-allowed;
+      color: #333 !important;
+    }
+
+    .check-box {
+      background-color: #ddd;
+      border-color: #ccc;
+    }
+
+    .check-label {
+      color: #333 !important;
+    }
+  }
 }
 
 .form-group {

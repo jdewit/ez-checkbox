@@ -32,6 +32,20 @@
   top: 0;
   font-size: 14px;
 }
+.ez-checkbox[disabled="disabled"] {
+  cursor: not-allowed;
+}
+.ez-checkbox[disabled="disabled"] i {
+  cursor: not-allowed;
+  color: #333 !important;
+}
+.ez-checkbox[disabled="disabled"] .check-box {
+  background-color: #ddd;
+  border-color: #ccc;
+}
+.ez-checkbox[disabled="disabled"] .check-label {
+  color: #333 !important;
+}
 .form-group .ez-checkbox {
   padding-top: 7px;
 }
