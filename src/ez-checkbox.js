@@ -33,6 +33,13 @@ angular.module('ez.checkbox', [])
         trueValue = false;
       }
 
+      if (attrs.hasOwnProperty('name')) {
+        $('form label[for="' + attrs.name + '"]').click(function() {
+          scope.toggle();
+          scope.$apply();
+        });
+      }
+
       modelCtrl.$render = function() {
         if (attrs.disabled) {
           return;
